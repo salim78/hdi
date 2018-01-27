@@ -1,0 +1,17 @@
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
+  - openjdk7
+script:
+  - mvn compile
+  - mvn test
+  - mvn package
+  - mvn verify
+deploy :
+  provider: heroku
+  api_key:
+  secure: 39e6fae1-94d9-4d14-8335-7162c744fa58
+  app: secret-chamber-22856
+on : master
