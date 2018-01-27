@@ -13,4 +13,3 @@ deploy :
   api_key:
   secure: 39e6fae1-94d9-4d14-8335-7162c744fa58
   app: whispering-badlands-16279
-on : master
