@@ -3,13 +3,18 @@ jdk:
   - oraclejdk8
   - oraclejdk9
   - openjdk8
+
 script:
   - mvn compile
   - mvn test
   - mvn package
   - mvn verify
-deploy :
+
+deploy:
   provider: heroku
   api_key:
-  secure: bc295021-1c9b-4dee-8f34-265535b8d8a9
-  app: young-retreat-35303
+    secure: bc295021-1c9b-4dee-8f34-265535b8d8a9
+  app: whispering-badlands-16279
+branches:
+  only:
+    - master
