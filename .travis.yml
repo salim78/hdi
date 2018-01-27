@@ -1,6 +1,5 @@
 language: java
 jdk:
-  - oraclejdk8
   - oraclejdk9
   - openjdk8
 
@@ -15,6 +14,4 @@ deploy:
   api_key:
     secure: bc295021-1c9b-4dee-8f34-265535b8d8a9
   app: whispering-badlands-16279
-branches:
-  only:
-    - master
+ on: master
